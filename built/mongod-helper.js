@@ -57,7 +57,7 @@ var MongodHelper = (function () {
         }
     };
     MongodHelper.prototype.getMongodStartedExpression = function () {
-        return /waiting for connections on port/i;
+        return /\[initandlisten\] setting featureCompatibilityVersion/i;
     };
     MongodHelper.prototype.getMongodAlreadyRunningExpression = function () {
         return /mongod instance already running/i;
